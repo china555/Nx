@@ -1,0 +1,43 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "angular",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "tour": {
+      "tags": []
+    },
+    "tour-e2e": {
+      "tags": [],
+      "implicitDependencies": ["tour"]
+    },
+    "tour-of-heroes": {
+      "tags": []
+    },
+    "tour-of-heroes-e2e": {
+      "tags": [],
+      "implicitDependencies": ["tour-of-heroes"]
+    },
+    "server": {
+      "tags": []
+    },
+    "heroes": {
+      "tags": []
+    }
+  }
+}
